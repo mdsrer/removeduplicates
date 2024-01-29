@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
 
+# Install required packages
+st.subheader("Installing required packages...")
+st.code("pip install pandas openpyxl")
+
+# Import the installed packages
+import pandas as pd
+
 def main():
     st.title('Duplicate Remover App')
 
