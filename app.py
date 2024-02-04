@@ -15,7 +15,6 @@ uploaded_files = st.file_uploader("Upload one or two Excel files", type=["xlsx"]
 
 if not uploaded_files or len(uploaded_files) < 1:
     st.warning("Please upload at least one file.")
-    return
 
 df1 = pd.read_excel(uploaded_files[0])
 df1 = df1.drop_duplicates(subset='email')
